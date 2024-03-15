@@ -81,7 +81,7 @@ $(function(){
             
             for(i = 0, max = results.length; i < max; i++) {
               buf = [];
-              buf.push('<li><h3 class="title">', '<a onclick="openfile(\'', results[i].url_link.replaceAll(" ", "%20"), '\');">', results[i].title,
+              buf.push('<li><h3 class="title">', '<a href="', results[i].url_link.replaceAll(" ", "%20"), '">', results[i].title,
                 '</a></h3><div class="body">', results[i].content_description,
                 '<br/><cite>', results[i].site, '</cite></div></li>');
               $(buf.join("")).appendTo($resultBody);
